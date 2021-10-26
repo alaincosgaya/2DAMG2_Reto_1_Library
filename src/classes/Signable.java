@@ -5,6 +5,11 @@
  */
 package classes;
 
+import exceptions.ConnectException;
+import exceptions.SignInException;
+import exceptions.SignUpException;
+import exceptions.UpdateException;
+
 /**
  * Interfaz con los tipos de metodos que se van a poder ejecutar en la 
  * aplicacion cliente y servidor.
