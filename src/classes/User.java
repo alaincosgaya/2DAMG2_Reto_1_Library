@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
  */
 public class User {
     private long id;
-    private String email, fullName, password;
+    private String username, email, fullName, password;
     private UserStatusType UserStatus;
     private UserPrivilegeType UserPrivilege;
     private LocalDateTime lastPasswordChange;
@@ -19,6 +19,7 @@ public class User {
      * Constructor de la clase User que va a contener el valor de todos los
      * atributos.
      * @param id La id de tipo long del usuario.
+     * @param username El nombre de usuario.
      * @param email El email de tipo String del usuario.
      * @param fullName El nombre completo de tipo String del usuario.
      * @param password La contraseña de tipo String del usuario.
@@ -27,8 +28,9 @@ public class User {
      * @param lastPasswordChange El ultimo cambio de contraseña de tipo 
      * LocalDateTime del usuario.
      */
-    public User(long id, String email, String fullName, String password, UserStatusType UserStatus, UserPrivilegeType UserPrivilege, LocalDateTime lastPasswordChange) {
+    public User(long id, String username, String email, String fullName, String password, UserStatusType UserStatus, UserPrivilegeType UserPrivilege, LocalDateTime lastPasswordChange) {
         this.id = id;
+        this.username = username;
         this.email = email;
         this.fullName = fullName;
         this.password = password;
@@ -43,12 +45,20 @@ public class User {
         
     }
 
+   
     public long getId() {
         return id;
     }
 
     public void setId(long id) {
         this.id = id;
+    }
+     public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {
