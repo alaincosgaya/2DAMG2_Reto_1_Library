@@ -30,7 +30,7 @@ public interface Signable {
      * @throws SignInException
      * @throws UpdateException 
      */
-    public UserInfo signIn(UserInfo message) throws ConnectException, SignInException, UpdateException;
+    public User signIn(User message) throws ConnectException, SignInException, UpdateException;
     
     /**
      * Metodo que registra al usuario en la base de datos en el caso de que los
@@ -46,5 +46,5 @@ public interface Signable {
      * @throws SignUpException
      * @throws UpdateException 
      */
-    public UserInfo signUp(UserInfo message) throws ConnectException, SignUpException, UpdateException;
+    public User signUp(User message) throws ConnectException, SignUpException, UpdateException;
 }
