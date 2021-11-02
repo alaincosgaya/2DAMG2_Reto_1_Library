@@ -1,12 +1,13 @@
 package classes;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * Clase User que va a contener todos los atributos, getters y setters
  * @author Alain Cosgaya
  */
-public class User {
+public class User implements Serializable{
     private long id;
     private String username, email, fullName, password;
     private UserStatusType UserStatus;
