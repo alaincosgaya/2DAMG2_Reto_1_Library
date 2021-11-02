@@ -5,11 +5,13 @@
  */
 package classes;
 
+import java.io.Serializable;
+
 /**
  * Clase UserInfo con la cual se va a trabajar en la aplicacion del servidor.
  * @author Alain Cosgaya
  */
-public class UserInfo {
+public class UserInfo implements Serializable{
     private User user;
     private MessageType message;
 
